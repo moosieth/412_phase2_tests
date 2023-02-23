@@ -18,6 +18,10 @@ A project to create a dockerized MYSQL instance to be used for testing by Group 
 Congrats! You now have a fully functioning MySQL instance running on `127.0.0.1:3306`. You can login 
 to it as the root user, with password 'password'.
 
+A quick note: `docker-compose.yaml` already creates a database inside the container, entitled `db`. 
+You can use it (by inclucing `USE db;` in the top of all your SQL queries and workspaces), or you can
+create a new one if you want.
+
 When you're done, you can stop the container through Docker Desktop, or you can run:
 
 ```bash
